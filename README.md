@@ -1,6 +1,4 @@
 # baby-safe-browser
-# Baby Safe Browser
-
 **Baby Safe Browser** is a browser extension designed to provide parents with control over their children's online activities by limiting access to specific websites. This tool ensures a safe and secure browsing environment tailored to your child’s needs.
 
 ## Features
