@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "URL Whitelist Extension",
+    "version": "1.0",
+    "description": "Allows access only to user-defined URLs. Blocks all others. pass[securepassword123]",
+    "permissions": [
+        "declarativeNetRequest",
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "48.png"
+        }
+    },
+    "icons": {
+        "48": "48.png"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    }
+}
